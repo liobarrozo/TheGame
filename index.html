@@ -29,16 +29,20 @@
 
         h1 {
             font-size: 3rem;
-            margin-bottom: 1rem;
-            margin-top: 1rem;
+            margin: 1rem;
             color: #ff4444;
         }
 
-        p {
+        .welcome {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .lost {
             font-size: 1.5rem;
             margin: 0;
             opacity: 0;
-            animation: revealText 1s ease-out 0.5s forwards;
+            animation: revealText 1s ease-out 2s forwards;
         }
 
         @keyframes fadeIn {
@@ -68,8 +72,9 @@
             font-size: 0.8rem;
             color: #999;
             text-decoration: none;
-            opacity: 0.7;
+            opacity: 0;
             transition: opacity 0.3s ease;
+            animation: revealText 1s ease-out 4s forwards;
         }
 
         .credit:hover {
@@ -84,9 +89,9 @@
 </head>
 <body>
     <div class="container">
-        <p>Welcome to</p>
-        <h1>The Game.</h1>
-        <p>You just lost.</p>
+        <p class="welcome">Welcome to</p>
+        <h1>The Game</h1>
+        <p class="lost">You just lost.</p>
     </div>
     <p class="credit">You got trolled with <span class="heart">♥</span> by <a target="_blank" href="https://github.com/MarianoVilla">Dot Dager</a></p>
 </body>
