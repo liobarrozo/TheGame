@@ -30,6 +30,7 @@
         h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
+            margin-top: 1rem;
             color: #ff4444;
         }
 
@@ -59,12 +60,34 @@
                 opacity: 1;
             }
         }
+
+        .credit {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 0.8rem;
+            color: #999;
+            text-decoration: none;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .credit:hover {
+            opacity: 1;
+            color: #ff6666;
+        }
+
+        .heart {
+            color: #ff4444;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>The Game</h1>
+        <p>Welcome to</p>
+        <h1>The Game.</h1>
         <p>You just lost.</p>
     </div>
+    <p class="credit">You got trolled with <span class="heart">♥</span> by <a target="_blank" href="https://github.com/MarianoVilla">Dot Dager</a></p>
 </body>
-</html> 
+</html>
